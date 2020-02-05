@@ -1,0 +1,15 @@
+{
+  "name": "serverworks_aws_support_autofill_signature",
+  "description": "サポートリクエストの本文入力欄（空欄状態）をクリックしたら勝手に署名テンプレを追記するマン",
+  "version": "0.1",
+  "content_scripts": [{
+    "js": [
+      "jquery-3.4.1.min.js",
+      "content_script.js"
+    ],
+    "matches": [
+      "https://console.aws.amazon.com/support/home*"
+    ]
+  }],
+  "manifest_version": 2
+}
